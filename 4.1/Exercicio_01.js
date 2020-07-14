@@ -11,12 +11,12 @@ console.log("O resultado é " + soma);
 
 // Programa p/ subtração: //
 let subtracao;
-subtração = a - b;
-console.log("O resultado é " + subtracao)
+subtracao = a - b;
+console.log("O resultado é " + subtracao);
 
 // Programa p/ multiplicação: //
 let multiplicacao;
-multiplicação = a * b;
+multiplicacao = a * b;
 console.log("O resultado é " + multiplicacao);
 
 // Programa p/ divisão //
