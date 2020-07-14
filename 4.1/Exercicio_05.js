@@ -12,4 +12,4 @@ if (anguloTotal === 180) {
     console.log(true);
 } else {
     console.log(false);
-} 
+}  
