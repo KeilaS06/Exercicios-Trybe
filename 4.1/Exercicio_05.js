@@ -10,6 +10,6 @@ let anguloTotal = anguloA + anguloB + anguloC;
 
 if (anguloTotal === 180) {
     console.log(true);
-} else if {
+} else {
     console.log(false);
-}
+} 
