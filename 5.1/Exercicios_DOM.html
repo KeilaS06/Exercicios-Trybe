@@ -54,17 +54,24 @@
 
         // Exercício 1
         function daqui2Anos() {
-            let paragraph = document.getElementsByTagName('p')[0]
+            let paragraph = document.getElementsByTagName('p')[1];
             paragraph.innerHTML = 'Keila | Desenvolvedora de Software'
         }
         daqui2Anos();
 
         // Exercício 2
-        function colorGreen() {
-            let color = document.getElementsByClassName('main-content')
-            color[0].style.backgroundColor = 'rgb(76,164,109)'
+        function colorYellow() {
+            let colorGreen = document.getElementsByClassName('main-content')[0];
+            colorGreen.style.backgroundColor = 'rgb(76,164,109)'
         }
-        colorGreen();
+        colorYellow();
+
+        // Exercício 3
+        function colorRed() {
+          let colorWhite = document.getElementsByClassName('center-content')[0];
+          colorWhite.style.backgroundColor = 'white';
+        }
+        colorRed();
 
 
     </script>
