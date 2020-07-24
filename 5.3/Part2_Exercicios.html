@@ -39,8 +39,8 @@
                     button.addEventListener('click', function() {
                         alert('You clicked the button');
                     });
-
                 </script>
+ 
             	<h2>Task 2</h2>
                 
                 <p>Add two lines of script to the &lt;script&gt; tag in the source of this page marked for this task (<b>lines 40 - 60</b>).  The first line should declare a new variable called <b>gamePrice</b> and should assign it the value <b>39.99</b>.  The second should declare a new variable called <b>discount</b> and assign it the value 0.20.</p>
@@ -52,8 +52,21 @@
 				</script>
                 
                 <p>You may want to consider using JavaScript's built in <a href="http://www.w3schools.com/js/js_obj_math.asp" target="_blank">Maths object</a> to round the number you get in your result to a more reasonable one.</p>
-            
- 
+                
+                <button id="secondButton">Click</button>
+
+
+                <script>
+
+                    let gamePrice = 39.99;
+                    let discount = 0.20;
+                    let button2 = document.querySelector('#secondButton');
+                    button2.addEventListener('click', function() {
+                    alert ("£ " + (gamePrice * discount) + "off!");
+                    });
+
+                </script>
+
                 <h2>Extensions</h2>
 				<ol>
 					<li>                
