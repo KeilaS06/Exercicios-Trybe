@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+let button1 = document.querySelector('#square-button');
+button1.addEventListener('click', function() {
+    let input = document.querySelector('#square-input').value;
+    let idSolution = document.getElementById('solution');
+    idSolution.innerHTML = "O resultado é " + squareNumber(input);
+});
+
+let button2 = document.querySelector('#half-button');
+button2.addEventListener('click', function() {
+    let input = document.querySelector('#half-input').value;
+    let idSolution = document.getElementById('solution');
+    idSolution.innerHTML = "O resultado é " + halfOf(input);
+});
+
+let button3 = document.querySelector('#percent-button');
+button3.addEventListener('click', function() {
+    let input1 = document.querySelector('#percent1-input').value;
+    let input2 = document.querySelector('#percent2-input').value;
+    let idSolution = document.getElementById('solution');
+    idSolution.innerHTML = "O resultado é " + percentOf(input1, input2);
+});
+
+let button4 = document.querySelector('#area-button');
+button4.addEventListener('click', function() {
+    let input1 = document.querySelector('#area-input').value;
+    let idSolution = document.getElementById('solution');
+    idSolution.innerHTML = "O resultado é " + areaOfCircle(input1);
+});
+
+function squareNumber(num) {
+    var squaredNumber = num * num;
+    console.log('The result of squaring the number ' + num + ' is ' + squaredNumber);
+    return squaredNumber;
+}
+
+function halfOf(num) {
+    var half = num / 2;
+    console.log('Half of ' + num + ' is ' +  half);
+    return half;
+}
+
+function percentOf(num1, num2) {
+    var percent = (num1/num2) * 100;
+    console.log(num1 + ' is ' + percent + '% of ' + num2);
+    return percent;
+}
+
+function areaOfCircle(radius) {
+    var area = Math.PI * squareNumber(radius);
+    console.log('The area of circle with radius ' + radius + ' is ' + area);
+    return area;
+}
+
+  </script>
+  
+</body>
+</html>
