@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco 06 - Dia 01</title>
+</head>
+<body>
+    <form action="" method="post" acntype="multipart/form-data">
+    <fieldset>
+        <label for="">Nome:</label>
+        <input type="text" placeholder="Digite seu nome" maxlength="40">
+        <br><br>
+
+        <label for="">E-mail:</label>
+        <input type="text" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Digite seu e-mail" maxlength="50">
+        <br><br>
+
+        <label for="">CPF:</label>
+        <input type="number" placeholder="Digite seu CPF" maxlength="11">
+        <br><br>
+
+        <label for="">Endereço:</label>
+        <input type="text" placeholder="Digite seu endereço" maxlength="200">
+        <br><br>
+
+        <label for="">Cidade:</label>
+        <input type="text" placeholder="Digite sua cidade" maxlength="28">
+        <br><br>
+
+        <label for="state">Selecione o seu estado:</label>
+        <select name="state" id="state">
+        </select>
+        <br><br>
+        
+        <p>Selecione o tipo de moradia.</p>
+        <label for="casa"><input type="radio" name="radioTipo" id="casa">Casa</label>
+        <br>
+        <label for="apt"><input type="radio" name="radioTipo" id="apt">Apartamento</label>
+        <br><br>
+
+
+        <button type="submit" id="btn">Enviar</button>
+    </fieldset>
+
+    <fieldset>
+        <textarea name="" placeholder="Resumo do currículo" id="" cols="30" rows="10" maxlength="1000" ></textarea>
+        <br><br>
+
+        <label for="">Cargo:</label>
+        <input type="text" placeholder="Digite seu cargo" maxlength="40">
+        <br><br>
+
+        <label for="">Descrição do cargo:</label>
+        <input type="text" placeholder="Digite a descrição do seu cargo" maxlength="500">
+        <br><br>
+
+        <label for="">Data de início:</label>
+        <input type="text" id="date" maxlength="10" minlength="10" placeholder="dd/mm/aaaa">
+        <br><br>
+
+    </fieldset>
+    
+    
+    
+    </form>
+
+  <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
