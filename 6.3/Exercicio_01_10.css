@@ -1,0 +1,8 @@
+#pond {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: flex-end;   
+}  
+
+/* flex-direction: row-reverse; //quando você define a direção para uma linha ou coluna invertida (de tras pra frente)
+justify-content: flex-end;   // o início e o final também são invertidos  */
