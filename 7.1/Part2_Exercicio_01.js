@@ -1,4 +1,4 @@
-// Crie uma função que receba uma frase e retorne qual a maior palavra.
+// Crie uma função que receba um número e retorne seu fatorial.
 
 const fatorial = num => {
   if(num >0) {
