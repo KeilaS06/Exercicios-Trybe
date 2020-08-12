@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3 do bloco 7_1</title>
+</head>
+<body>
+  
+  <button id="button-count">Click</button>
+  <p id="click-count">0</p>
+  <script>
+    const button = document.getElementById('button-count');
+    const number = document.getElementById('click-count');
+    let clickCount = 0;
+
+    button.addEventListener('click', () => {
+      number.innerHTML = clickCount += 1;
+      clickCount > 1 ? number.innerHTML += " Cliques" : text.innerHTML += " Clique"
+    })
+  </script>
+</body>
+</html>
