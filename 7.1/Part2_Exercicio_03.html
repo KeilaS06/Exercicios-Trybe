@@ -16,7 +16,7 @@
 
     button.addEventListener('click', () => {
       number.innerHTML = clickCount += 1;
-      clickCount > 1 ? number.innerHTML += " Cliques" : text.innerHTML += " Clique"
+      clickCount >= 2 ? number.innerHTML += " Cliques" : number.innerHTML += " Clique"
     })
   </script>
 </body>
